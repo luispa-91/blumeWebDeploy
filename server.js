@@ -1,3 +1,6 @@
+var http = require('http')
+var port = process.env.PORT || 1337;
+
 var adal = require('adal-node').AuthenticationContext;
 
 var authorityHostUrl = 'https://login.windows.net';
@@ -16,3 +19,8 @@ context.acquireTokenWithClientCredentials(resource, clientId, clientSecret, func
     console.log(tokenResponse);
   }
 });
+
+http.createServer(function(req, res) {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Hello Adal Node\n');
+}).listen(port);
