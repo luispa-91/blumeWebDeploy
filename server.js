@@ -23,6 +23,7 @@
 var fs = require('fs');
 var adal = require('adal-node');
 var express = require('express');
+var rest=require('restler');
 var app = express();
 var port = process.env.port || 1337;
 
@@ -90,12 +91,22 @@ turnOnLogging();
 
 var context = new AuthenticationContext(authorityUrl);
 
+var authHeader, requestURL;
+
 context.acquireTokenWithClientCredentials(resource, sampleParameters.clientId, sampleParameters.clientSecret, function(err, tokenResponse) {
   if (err) {
     console.log('well that didn\'t work: ' + err.stack);
   } else {
-    res.send(tokenResponse.accessToken);
-    console.log(tokenResponse);
+
+    authHeader = tokenResponse['accessToken'];
+
+    requestURL="https://management.azure.com/subscriptions/c89d04e7-07a8-4485-85a0-9a5e3881d300/resources?api-version=2015-01-01";
+    rest.get(requestURL, {accessToken:authHeader}).on('complete',function(result) {
+      res.send(result.value[0].name);
+    });
+
+    //res.send(tokenResponse.accessToken);
+    //console.log(tokenResponse);
   }
 });
 
