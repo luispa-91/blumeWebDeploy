@@ -1,22 +1,18 @@
 {
   "name": "helloworld",
   "version": "1.0.0",
-  "description": "Test Node.js application",
+  "description": "Server to Server Authentication using ADAL Node and Azure AD",
   "main": "server.js",
-  "dependencies": {
-    "adal-node": "^0.1.18",
-    "connect-logger": "0.0.1",
-    "cookie-parser": "^1.4.1",
-    "cookie-session": "^1.2.0",
-    "crypto": "0.0.3",
-    "express": "^4.13.4",
-    "fs": "0.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "MadeByBlume",
+  "repository": {
+    "type": "git",
+    "url": "https://blumenode@blumenode.scm.azurewebsites.net:443/blumenode.git"
+  },
+  "author": "Made by Blume",
   "license": "ISC"
 }
