@@ -66,16 +66,16 @@ if (parametersFile) {
 
 if (!parametersFile) {
   sampleParameters = {
-    tenant : 'rrandallaad1.onmicrosoft.com',
-    authorityHostUrl : 'https://login.windows.net',
-    clientId : '624ac9bd-4c1c-4687-aec8-b56a8991cfb3',
-    clientSecret : ''
+    tenant : 'luispardophotmail.onmicrosoft.com',
+    authorityHostUrl : 'https://login.microsoftonline.com',
+    clientId : '3e44b5a3-68e2-4fd5-8060-07733adb75fc',
+    clientSecret : 'Ys2Q5zG9wy5LXi7CfJipikFi1NMBw1TmcsxQ2QRtSN8='
   };
 }
 
 var authorityUrl = sampleParameters.authorityHostUrl + '/' + sampleParameters.tenant;
 
-var resource = '00000002-0000-0000-c000-000000000000';
+var resource = 'https://management.azure.com/';
 
 turnOnLogging();
 
