@@ -22,7 +22,15 @@
 
 var fs = require('fs');
 var adal = require('adal-node');
+var express = require('express');
+var app = express();
 
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+
+app.get('/test', function (req, res) {
+  
 
 var AuthenticationContext = adal.AuthenticationContext;
 
@@ -85,6 +93,15 @@ context.acquireTokenWithClientCredentials(resource, sampleParameters.clientId, s
   if (err) {
     console.log('well that didn\'t work: ' + err.stack);
   } else {
+    res.send(tokenResponse.accessToken);
     console.log(tokenResponse);
   }
 });
+
+  
+});
+
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
+});
+
