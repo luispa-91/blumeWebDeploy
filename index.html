@@ -1,0 +1,40 @@
+<html ng-app="blumeDeploymentApp">
+<head>
+	<title> Angular + Node </title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+</head>
+<body ng-controller="DeploymentController">
+	Node serving index.html
+
+	<br />
+
+	<button ng-click="getResources()">
+		Get Resources
+	</button>
+
+	<br />
+
+	or 
+
+	<input type="text" ng-model="formData.siteName" />
+
+	<br />
+
+	<button ng-click="deployWebsite()">
+		Deploy Website
+	</button>
+
+	<h1>
+		TEST: 
+	</h1>{{ testPass }}
+
+	<br />
+		<h1>ARM template</h1>
+	{{ ARMTemplate }}
+
+		<br>
+		{{test}}
+
+</body>
+</html>

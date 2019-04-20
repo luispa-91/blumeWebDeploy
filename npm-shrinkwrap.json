@@ -77,6 +77,28 @@
         }
       }
     },
+    "body-parser": {
+      "version": "1.15.0",
+      "from": "body-parser@*",
+      "resolved": "https://registry.npmjs.org/body-parser/-/body-parser-1.15.0.tgz",
+      "dependencies": {
+        "http-errors": {
+          "version": "1.4.0",
+          "from": "http-errors@>=1.4.0 <1.5.0",
+          "resolved": "https://registry.npmjs.org/http-errors/-/http-errors-1.4.0.tgz"
+        },
+        "iconv-lite": {
+          "version": "0.4.13",
+          "from": "iconv-lite@0.4.13",
+          "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.13.tgz"
+        },
+        "qs": {
+          "version": "6.1.0",
+          "from": "qs@6.1.0",
+          "resolved": "https://registry.npmjs.org/qs/-/qs-6.1.0.tgz"
+        }
+      }
+    },
     "boom": {
       "version": "2.10.1",
       "from": "boom@>=2.0.0 <3.0.0",
@@ -86,6 +108,11 @@
       "version": "1.0.1",
       "from": "buffer-equal-constant-time@>=1.0.1 <2.0.0",
       "resolved": "https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz"
+    },
+    "bytes": {
+      "version": "2.2.0",
+      "from": "bytes@2.2.0",
+      "resolved": "https://registry.npmjs.org/bytes/-/bytes-2.2.0.tgz"
     },
     "camelcase": {
       "version": "1.2.1",
@@ -590,6 +617,22 @@
       "version": "1.0.3",
       "from": "range-parser@>=1.0.3 <1.1.0",
       "resolved": "https://registry.npmjs.org/range-parser/-/range-parser-1.0.3.tgz"
+    },
+    "raw-body": {
+      "version": "2.1.6",
+      "from": "raw-body@>=2.1.5 <2.2.0",
+      "resolved": "https://registry.npmjs.org/raw-body/-/raw-body-2.1.6.tgz",
+      "dependencies": {
+        "bytes": {
+          "version": "2.3.0",
+          "from": "bytes@2.3.0",
+          "resolved": "https://registry.npmjs.org/bytes/-/bytes-2.3.0.tgz"
+        },
+        "iconv-lite": {
+          "version": "0.4.13",
+          "from": "iconv-lite@0.4.13"
+        }
+      }
     },
     "readable-stream": {
       "version": "1.1.13",

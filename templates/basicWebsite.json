@@ -1,0 +1,94 @@
+{
+  "id": "/subscriptions/c89d04e7-07a8-4485-85a0-9a5e3881d300/resourceGroups/Default-Web-WestUS/providers/Microsoft.Web/sites/siteName",
+  "name": "siteName",
+  "type": "Microsoft.Web/sites",
+  "location": "West US",
+  "tags": {
+    "hidden-related:/subscriptions/c89d04e7-07a8-4485-85a0-9a5e3881d300/resourcegroups/Default-Web-WestUS/providers/Microsoft.Web/serverfarms/Default2": "empty"
+  },
+  "properties": {
+    "name": "siteName",
+    "state": "Running",
+    "hostNames": [
+      "siteName.azurewebsites.net"
+    ],
+    "webSpace": "westuswebspace",
+    "selfLink": "https://waws-prod-bay-021.api.azurewebsites.windows.net:454/subscriptions/c89d04e7-07a8-4485-85a0-9a5e3881d300/webspaces/westuswebspace/sites/siteName",
+    "repositorySiteName": "siteName",
+    "owner": null,
+    "usageState": 0,
+    "enabled": true,
+    "adminEnabled": true,
+    "enabledHostNames": [
+      "siteName.azurewebsites.net",
+      "siteName.scm.azurewebsites.net"
+    ],
+    "siteProperties": {
+      "metadata": null,
+      "properties": [],
+      "appSettings": null
+    },
+    "availabilityState": 0,
+    "sslCertificates": null,
+    "csrs": [],
+    "cers": null,
+    "siteMode": null,
+    "hostNameSslStates": [
+      {
+        "name": "siteName.azurewebsites.net",
+        "sslState": 0,
+        "ipBasedSslResult": null,
+        "virtualIP": null,
+        "thumbprint": null,
+        "toUpdate": null,
+        "toUpdateIpBasedSsl": null,
+        "ipBasedSslState": 0,
+        "hostType": 0
+      },
+      {
+        "name": "siteName.scm.azurewebsites.net",
+        "sslState": 0,
+        "ipBasedSslResult": null,
+        "virtualIP": null,
+        "thumbprint": null,
+        "toUpdate": null,
+        "toUpdateIpBasedSsl": null,
+        "ipBasedSslState": 0,
+        "hostType": 1
+      }
+    ],
+    "computeMode": null,
+    "serverFarm": null,
+    "serverFarmId": "/subscriptions/c89d04e7-07a8-4485-85a0-9a5e3881d300/resourceGroups/Default-Web-WestUS/providers/Microsoft.Web/serverfarms/Default2",
+    "lastModifiedTimeUtc": "2016-03-27T06:56:37.75",
+    "storageRecoveryDefaultState": "Running",
+    "contentAvailabilityState": 0,
+    "runtimeAvailabilityState": 0,
+    "siteConfig": null,
+    "deploymentId": "siteName",
+    "trafficManagerHostNames": null,
+    "sku": "Standard",
+    "premiumAppDeployed": null,
+    "scmSiteAlsoStopped": false,
+    "targetSwapSlot": null,
+    "hostingEnvironment": null,
+    "hostingEnvironmentProfile": null,
+    "microService": "WebSites",
+    "gatewaySiteName": null,
+    "clientAffinityEnabled": true,
+    "clientCertEnabled": false,
+    "hostNamesDisabled": false,
+    "domainVerificationIdentifiers": null,
+    "kind": null,
+    "outboundIpAddresses": "104.45.225.96,104.45.229.87,104.45.229.169,104.45.233.233",
+    "containerSize": 0,
+    "maxNumberOfWorkers": null,
+    "cloningInfo": null,
+    "hostingEnvironmentId": null,
+    "tags": {
+      "hidden-related:/subscriptions/c89d04e7-07a8-4485-85a0-9a5e3881d300/resourcegroups/Default-Web-WestUS/providers/Microsoft.Web/serverfarms/Default2": "empty"
+    },
+    "resourceGroup": "Default-Web-WestUS",
+    "defaultHostName": "siteName.azurewebsites.net"
+  }
+}
